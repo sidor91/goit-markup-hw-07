@@ -302,48 +302,48 @@
             </div>
         </section>
         <!-- Modal -->
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop backdrop--is-hidden" data-modal>
             <div class="modal">
-                <strong class="modal-header">Залиште свої дані, ми вам передзвонимо</strong>
+                <strong class="modal__heading">Залиште свої дані, ми вам передзвонимо</strong>
                 <form>
-                    <div class="modal-form">
-                        <label class="modal-name">
-                            <span class="label">Ім'я</span>
-                            <input type="text" name="name" class="input">
-                            <svg class="icon">
+                    <div class="form modal__form">
+                        <label class="form__item">
+                            <span class="form__label">Ім'я</span>
+                            <input type="text" name="name" class="form__input">
+                            <svg class="form__icon">
                                 <use href="./images/icons.svg#icon-username"></use>
                             </svg>
                         </label>
-                        <label class="modal-phone">
-                            <span class="label" >Телефон</span>
-                            <input type="tel" name="phone" class="input">
-                            <svg class="icon">
+                        <label class="form__item">
+                            <span class="form__label" >Телефон</span>
+                            <input type="tel" name="phone" class="form__input">
+                            <svg class="form__icon">
                                 <use href="./images/icons.svg#icon-userphone"></use>
                             </svg>
                         </label>
-                        <label class="modal-email">
-                            <span class="label">Пошта</span>
-                            <input type="email" name="email" class="input">
-                            <svg class="icon">
+                        <label class="form__item">
+                            <span class="form__label">Пошта</span>
+                            <input type="email" name="email" class="form__input">
+                            <svg class="form__icon">
                                 <use href="./images/icons.svg#icon-useremail"></use>
                             </svg>
                         </label>
-                        <label class="modal-comment">
-                            <span class="label">Коментар</span>
-                            <textarea name="comment" class="textarea" placeholder="Введіть текст"></textarea>
+                        <label class="form__comment">
+                            <span class="form__label">Коментар</span>
+                            <textarea name="comment" class="form__textarea" placeholder="Введіть текст"></textarea>
                         </label>
                     </div>
-                    <label class="modal-policy">
+                    <label class="policy">
                         <input type="checkbox" name="policy" class="checkbox">
-                        <svg class="icon-check">
+                        <svg class="checkbox__icon">
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
-                        <span class="label">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
+                        <span class="policy__label">Погоджуюся з розсилкою та приймаю <a href="" class="policy__link">Умови договору</a></span>
                     </label>
-                    <button type="submit" class="modal-submit">Відправити</button>
+                    <button type="submit" class="modal__submit">Відправити</button>
                 </form>
-                <button class="close-button" data-modal-close>
-                    <svg class="icon">
+                <button class="close-button modal__close-button" data-modal-close>
+                    <svg class="close-button__icon">
                         <use href="./images/icons.svg#icon-closebutton"></use>
                     </svg>
                 </button>
