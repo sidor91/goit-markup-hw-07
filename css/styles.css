@@ -76,6 +76,15 @@ body {
     padding-right: 15px;
 }
 
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
 /* Header */
 
 .header {
@@ -124,7 +133,6 @@ body {
 }
 
 .main-nav__item {
-    margin-left: 50px;
 
     font-weight: 500;
     font-size: 14px;
@@ -132,8 +140,8 @@ body {
     letter-spacing: 0.02em;
 }
 
-.main-nav__item--first {
-    margin-left: 0;
+.main-nav__item:not(:first-child) {
+    margin-left: 50px;
 }
 
 .main-nav__link {
@@ -184,7 +192,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contacts__item--last {
+.contacts__item:not(:first-child) {
     margin-left: 30px;
 }
 
@@ -213,7 +221,6 @@ body {
 .hero {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 94px;
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -227,7 +234,7 @@ body {
     text-align: center;
 }
 
-.hero__title {
+.hero__heading {
     margin-bottom: 30px;
     width: 696px;
     margin-left: auto;
@@ -265,30 +272,22 @@ body {
 }
 
 
-.section-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
 /* Features */
 
-.section.features {
-    margin-bottom: 94px;
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.features-list {
+.features__list {
     display: flex;
 }
 
-.features-item {
+.features__item {
     width: calc((100%-90px)/4);
 }
 
-.features-item > .box {
+.features__image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,11 +297,11 @@ body {
     background-color: var(--secondary-background-color);
 }
 
-.features-list .features-item:not(:last-child) {
-    margin-right: 30px;
+.features__item:not(:first-child) {
+    margin-left: 30px;
 }
 
-.features-title {
+.features__title {
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -313,7 +312,7 @@ body {
     text-transform: uppercase;
 }
 
-.features-description {
+.features__description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -321,33 +320,34 @@ body {
 
 /* What we do */
 
-.section-title {
-    margin-bottom: 50px;
+.services {
+    padding-bottom: 94px;
 }
 
-.services.list {
+.services__heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.services__list {
     display: flex;
 }
 
-.services img {
+.services__image {
     display: block;
 }
 
-.services .item {
+.services__item {
     width: calc((100%-60px)/3);
     height: auto;
     position: relative;
 }
 
-.services .item:not(:last-child) {
-    margin-right: 30px;
+.services__item:not(:first-child) {
+    margin-left: 30px;
 }
 
-.services {
-    margin-bottom: 94px;
-}
-
-.service-title {
+.services__title {
     display: block;
     padding: 27px 0;
     width: 100%;
