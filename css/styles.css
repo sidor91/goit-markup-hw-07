@@ -212,7 +212,7 @@ body {
     color: var(--accent-color);
 }
 
-.header-ontacts__link:hover .header-contacts__icon,
+.header-contacts__link:hover .header-contacts__icon,
 .header-contacts__link:focus .header-contacts__icon {
     fill: var(--accent-color);
 }
