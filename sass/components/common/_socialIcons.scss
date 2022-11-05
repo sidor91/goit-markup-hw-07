@@ -1,0 +1,36 @@
+@import "../../utils/vars";
+
+.social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color $transition-duration $transition-timing-function;
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    transition: fill $transition-duration $transition-timing-function;
+}
+

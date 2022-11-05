@@ -1,0 +1,30 @@
+@import "../../utils/vars";
+@import "./main-nav";
+@import "./headerContacts";
+@import "../../utils/placeholders";
+
+
+
+.header {
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    @extend %logo; 
+    margin-top: 24px;
+    margin-bottom: 25px;
+
+    &--accent {
+        color: $accent-color;
+    }
+
+    &--black {
+        color: black;
+    }
+}

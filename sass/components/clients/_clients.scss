@@ -1,0 +1,49 @@
+@import "../../utils/vars";
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__heading {
+    margin-bottom: 50px;
+}
+
+.clients__list {
+    display: flex;
+}
+
+.clients__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color $transition-duration $transition-timing-function;
+
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid $social-item-color;
+    border-radius: 4px;
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    &:hover {
+        border-color: $accent-color;
+        cursor: pointer;
+    }
+}
+
+.clients__icon {
+    display: block;
+    transition: fill $transition-duration $transition-timing-function;
+    fill: $social-item-color;
+    width: 106px;
+    height: 60px;
+
+    .clients__item:hover & {
+        fill: $accent-color;
+    }
+}
+
