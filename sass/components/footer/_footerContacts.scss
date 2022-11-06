@@ -3,7 +3,7 @@
 }
 
 .footer-contacts__link {
-    transition: color $transition-duration $transition-timing-function;
+    @include transitioned(color);
 
     color: $footer-contacts-color;
     font-weight: 400;

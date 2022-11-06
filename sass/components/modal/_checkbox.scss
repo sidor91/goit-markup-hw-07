@@ -22,7 +22,7 @@
 
     border: 2px solid black;
     border-radius: 2px;
-    transition: background-color $transition-duration $transition-timing-function;
+    @include transitioned(background-color);
 
     .checkbox:checked + & {
         background-color: $accent-color;

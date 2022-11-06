@@ -1,5 +1,3 @@
-@import "../../utils/vars";
-
 .social__item {
     display: flex;
     align-items: center;
@@ -9,7 +7,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: background-color $transition-duration $transition-timing-function;
+    @include transitioned(background-color);
 
     &:not(:first-child) {
         margin-left: 10px;
@@ -31,6 +29,6 @@
 .social__icon {
     width: 20px;
     height: 20px;
-    transition: fill $transition-duration $transition-timing-function;
+    @include transitioned(fill);
 }
 

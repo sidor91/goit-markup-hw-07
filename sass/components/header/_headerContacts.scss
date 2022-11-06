@@ -1,14 +1,12 @@
-@import "../../utils/vars";
-
 .header-contacts {
     display: flex;
-    margin-left: 315px;
+    margin-left: auto;
 }
 
 .header-contacts__link {
     display: flex;
     align-items: center;
-    transition: color $transition-duration $transition-timing-function;
+    @include transitioned(color);
 
     color: $header-contacts-color;
     font-weight: 500;
@@ -32,7 +30,7 @@
 
 .header-contacts__icon {
     fill: $header-contacts-color;
-    transition: fill $transition-duration $transition-timing-function;
+    @include transitioned(fill);
 
     .header-contacts__link:hover &, 
     .header-contacts__link:focus & {

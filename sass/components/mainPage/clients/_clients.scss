@@ -1,5 +1,3 @@
-@import "../../utils/vars";
-
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -17,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: border-color $transition-duration $transition-timing-function;
+    @include transitioned(border-color);
 
     width: 170px;
     height: 92px;
@@ -37,7 +35,7 @@
 
 .clients__icon {
     display: block;
-    transition: fill $transition-duration $transition-timing-function;
+    @include transitioned(fill);
     fill: $social-item-color;
     width: 106px;
     height: 60px;
